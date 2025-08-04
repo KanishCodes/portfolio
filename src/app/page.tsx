@@ -34,7 +34,7 @@ export default function HomePage() {
     <div className="about-image">
             {/* 3. Use the Next.js Image component */}
             <Image
-              src="/images/kanish-big.jpg"
+              src="/images/kanish_big.jpg"
               alt="A photo of Kanish"
               className="profile-photo"
               width={350}
