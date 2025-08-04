@@ -30,7 +30,8 @@ export default async function Projects() {
 
   try {
     projects = await getProjects();
-  } catch (err: any) {
+  } catch (err) {
+    console.error("Errror loading projects:", err);
     error = "Failed to load projects. Please try again later.";
   }
 

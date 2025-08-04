@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import Projects from './components/Projects';
 import SocialLinks from './components/SocialLinks'; // Import the new component
 import Skills from './components/Skills';
+import Image from 'next/image';
 
 export default function HomePage() {
   return (
@@ -22,24 +23,28 @@ export default function HomePage() {
     <div className="about-text">
       <h3>A Story of Code and Creativity</h3>
       <p>
-        Hello! I'm Kanish, a software engineer who loves to build things for the web. I'm meticulous by nature—a trait that serves me well whether I'm pushing my limits or pushing code to production. I believe the details make all the difference in creating clean, efficient, and user-friendly applications.
+        Hello! I&apos;m Kanish, a software engineer who loves to build things for the web. I&apos;m meticulous by nature—a trait that serves me well whether I am pushing my limits or pushing code to production. I believe the details make all the difference in creating clean, efficient, and user-friendly applications.
       </p>
       <p>
-       
-   This portfolio is my corner of the internet, a place to showcase my projects and share what I'm learning along the way.
+         This portfolio is my corner of the internet, a place to showcase my projects and share what I am learning along the way.
       </p>
      
     </div>
     {/* Column 2: Image */}
     <div className="about-image">
-      <img
-        src="/images/kanish_big.jpg" // Make sure your photo has this name and is in public/images
-        alt="A photo of Kanish"
-        className="profile-photo"
-      />
-    </div>
-  </div>
-</section>
+            {/* 3. Use the Next.js Image component */}
+            <Image
+              src="/images/kanish-photo.jpg"
+              alt="A photo of Kanish"
+              className="profile-photo"
+              width={350}
+              height={350}
+              priority
+            />
+          </div>
+        </div>
+      </section>
+    
 
 {/* ... the rest of your page (Skills, Projects, etc.) ... */}
 

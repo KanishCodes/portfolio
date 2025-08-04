@@ -44,7 +44,7 @@ const Hero = () => {
       >
         <div className="hero-content">
           <motion.h1 className="hero-title" variants={itemVariants}>
-            Hi, I'm <span className="highlight">Kanish</span>
+            Hi, I&apos;m <span className="highlight">Kanish</span>
           </motion.h1>
           <motion.p className="hero-subtitle" variants={itemVariants}>
             Full-Stack Developer
